@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"  # Perintah untuk build proyek Anda, sesuaikan dengan kebutuhan Anda
+  publish = "public"         # Direktori tempat hasil build akan ditempatkan, sesuaikan dengan proyek Anda
+
+[dev]
+  command = "npm run start"  # Perintah untuk menjalankan server di lingkungan pengembangan, sesuaikan
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
